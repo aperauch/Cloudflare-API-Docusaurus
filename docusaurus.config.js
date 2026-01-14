@@ -24,8 +24,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // REQUIRED: Tells Docusaurus to use the API Item component for doc pages
-          docItemComponent: "@theme/ApiItem", 
         },
         blog: false, // Disable blog for this documentation site
         theme: {
@@ -35,31 +33,8 @@ const config = {
     ],
   ],
 
-  // REQUIRED: Add the OpenAPI theme
-  themes: ["docusaurus-theme-openapi-docs"],
-
   plugins: [
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        id: "api",
-        docsPluginId: "classic",
-        config: {
-          cloudflare: {
-            specPath: "openapi.json", // Path to the downloaded file
-            outputDir: "docs/api",    // Output MDX files here
-            downloadUrl: "https://raw.githubusercontent.com/cloudflare/api-schemas/refs/heads/main/openapi.json",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-              categoryLinkSource: "tag",
-            },
-            version: "1.0.0",
-            label: "v1.0.0",
-            baseUrl: "/api",
-          }
-        }
-      },
-    ]
+    // Using a custom approach to handle the OpenAPI spec
   ],
 
   themeConfig:
@@ -77,7 +52,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'API Reference',
+            label: 'API Documentation',
           },
         ],
       },
@@ -86,29 +61,6 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash', 'diff', 'json'],
       },
-      // REQUIRED: Configuration for the interactive API playground
-      languageTabs: [
-        {
-          highlight: "bash",
-          language: "curl",
-          logoClass: "bash",
-        },
-        {
-          highlight: "python",
-          language: "python",
-          logoClass: "python",
-        },
-        {
-          highlight: "go",
-          language: "go",
-          logoClass: "go",
-        },
-        {
-          highlight: "javascript",
-          language: "nodejs",
-          logoClass: "nodejs",
-        },
-      ],
     }),
 };
 
