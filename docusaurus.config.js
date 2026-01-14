@@ -34,7 +34,7 @@ const config = {
   ],
 
   plugins: [
-    // Using a custom approach to handle the OpenAPI spec
+    // Clean configuration without problematic OpenAPI plugins
   ],
 
   themeConfig:
@@ -52,7 +52,12 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'API Documentation',
+            label: 'Documentation',
+          },
+          {
+            to: '/api-playground',
+            label: 'Interactive API Reference',
+            position: 'left',
           },
         ],
       },
