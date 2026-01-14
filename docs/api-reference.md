@@ -14,7 +14,7 @@ The complete Cloudflare API specification is available as an OpenAPI 3.0 documen
 
 ### Download the OpenAPI Spec
 
-- **JSON Format**: [openapi.json](../openapi.json) (8MB)
+- **JSON Format**: [openapi.json](/openapi.json) (8MB)
 - **Source**: [Cloudflare API Schemas Repository](https://github.com/cloudflare/api-schemas)
 
 ### Using the OpenAPI Specification
