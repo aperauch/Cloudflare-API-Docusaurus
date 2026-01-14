@@ -159,7 +159,7 @@ Be aware of rate limits:
 ## Next Steps
 
 1. **Explore the [API Reference](./api-reference.md)** for detailed endpoint documentation
-2. **Download the [OpenAPI Specification](../openapi.json)** for your tools
+2. **Download the [OpenAPI Specification](/openapi.json)** for your tools
 3. **Join the [Developer Community](https://discord.gg/cloudflaredev)** for support
 4. **Check out [SDKs and Libraries](./api-reference.md#sdks-and-libraries)** for your language
 
